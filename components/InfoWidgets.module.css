@@ -1,0 +1,129 @@
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: border-color 0.2s;
+}
+
+.card:hover { border-color: var(--border2); }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  color: var(--text);
+  letter-spacing: 0.04em;
+}
+
+.sublabel {
+  font-size: 11px;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Holidays */
+.holidays {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.holiday {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.hDate {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gold);
+  min-width: 44px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hInfo { display: flex; flex-direction: column; }
+
+.hName {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.hJp {
+  font-family: var(--font-serif);
+  font-size: 12px;
+  color: var(--text3);
+}
+
+.noHolidays {
+  font-size: 13px;
+  color: var(--text3);
+}
+
+/* Links */
+.linkSections {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section { display: flex; flex-direction: column; gap: 6px; }
+
+.sectionTitle {
+  font-size: 10px;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2px;
+}
+
+.linkGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+.link:hover {
+  background: var(--bg3);
+}
+
+.link:hover .linkLabel { color: var(--gold2); }
+.link:hover .linkArrow { opacity: 1; color: var(--gold); }
+
+.linkIcon { font-size: 14px; }
+
+.linkLabel {
+  flex: 1;
+  font-size: 12px;
+  color: var(--text2);
+  transition: color 0.15s;
+}
+
+.linkArrow {
+  font-size: 12px;
+  color: var(--text3);
+  opacity: 0;
+  transition: all 0.15s;
+}

@@ -1,0 +1,112 @@
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.card:hover { border-color: var(--border2); }
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 160px; height: 160px;
+  background: radial-gradient(circle, rgba(94,130,200,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  color: var(--text);
+  letter-spacing: 0.04em;
+}
+
+.sublabel {
+  font-size: 11px;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.current {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon { font-size: 44px; line-height: 1; }
+
+.tempBlock { display: flex; flex-direction: column; }
+
+.temp {
+  font-family: var(--font-serif);
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1;
+}
+
+.feels { font-size: 12px; color: var(--text3); margin-top: 4px; }
+
+.details { margin-left: auto; text-align: right; }
+
+.condition {
+  font-size: 14px;
+  color: var(--text2);
+  margin-bottom: 8px;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--text3);
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.dayName {
+  font-size: 11px;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.dayIcon { font-size: 20px; }
+.dayMax { font-size: 13px; color: var(--text); font-weight: 500; }
+.dayMin { font-size: 12px; color: var(--text3); }
+
+.loading {
+  color: var(--text3);
+  font-size: 13px;
+  padding: 20px;
+}
