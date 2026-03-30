@@ -119,11 +119,6 @@
   flex-direction: column;
 }
 
-/* Chat widget spans taller */
-.chatCol {
-  grid-row: span 1;
-}
-
 /* Footer */
 .footer {
   position: relative;

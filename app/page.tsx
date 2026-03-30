@@ -1,6 +1,5 @@
 import WeatherWidget from '@/components/WeatherWidget'
 import CurrencyWidget from '@/components/CurrencyWidget'
-import ChatWidget from '@/components/ChatWidget'
 import { HolidaysWidget, LinksWidget } from '@/components/InfoWidgets'
 import QuickFacts from '@/components/QuickFacts'
 import styles from './page.module.css'
@@ -44,10 +43,6 @@ export default function Home() {
           <QuickFacts />
         </div>
 
-        {/* Bottom row */}
-        <div className={`${styles.col} ${styles.chatCol}`}>
-          <ChatWidget />
-        </div>
         <div className={styles.col}>
           <HolidaysWidget />
         </div>
@@ -57,7 +52,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <span>Japan Life Dashboard — Built with Claude AI</span>
+        <span>Japan Life Dashboard</span>
         <span className={styles.footerJp}>日本生活</span>
       </footer>
     </div>
